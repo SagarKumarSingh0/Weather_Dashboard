@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0 0 15px 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-btn:hover {
+    background-color: #2980b9;
+}
+
+#search-history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.history-item {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.history-item:hover {
+    background-color: #2980b9;
+}
+
+.weather-card {
+    background-color: #f1c6c6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#current-details {
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#current-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+#forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.forecast-day {
+    background-color: #dac4c4;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.forecast-day h4 {
+    margin-top: 0;
+}
+
+.forecast-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+#weather-chart {
+    background-color: #e9dcdc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+}
+
+@media (max-width: 768px) {
+    #forecast-container {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
